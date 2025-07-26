@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+{% endblock %}
+{% block title %}
+    tictactoe
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid p-0">
+        <div class="container text-center fw-bold fs-3 guide mt-3">Tic-Tac-Toe</div>
+        <div class="container mt-3 p-0">
+            <table class="table table-bordered border border-dark border-5">
+                <tbody>
+                    {% for i in range(3) %}
+                    <tr>
+                        {% for j in range(3) %}
+                        <td class="border border-secondary border-3 box p-0">
+                            <div class="cell" id="{{ i }},{{ j }}">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 -960 960 960" width="100%" fill="#00000000"><path d="m249-183-66-66 231-231-231-231 66-66 231 231 231-231 66 66-231 231 231 231-66 66-231-231-231 231Z"/></svg>
+                            </div>
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container text-center mt-3">
+        <button class="btn btn-primary play text-center fw-bold fs-5" id="reset">Play</button>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/tictactoe.js') }}"></script>
+{% endblock %}

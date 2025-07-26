@@ -1,0 +1,24 @@
+*{
+    justify-items: center;
+}
+
+.table{
+    width: 80vmin;
+    height: 80vmin;
+
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+.cell{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+svg{
+    justify-self: center;
+}
