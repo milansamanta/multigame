@@ -42,4 +42,4 @@ A web-based Tic-Tac-Toe game built with **Flask** for the backend and **HTML, CS
 
    ```bash
    git clone https://github.com/milansamanta/multigame.git
-   cd flask-tictactoe-ai
+   cd multigame
