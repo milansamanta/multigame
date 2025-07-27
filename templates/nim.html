@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block links %}
+    <script src="{{ url_for('static', filename='scripts/nim.js') }}"></script>
+{% endblock %}
+
+{% block title %} Nim {% endblock %}
+
+{% block main %}
+<div class="container align-items-center align-content-center justify-content-center text-center">
+    <h1 class="mb-4">Nim Game</h1>
+    <div id="game-container" class="d-flex flex-column align-items-center">
+        <div id="pile-display" class="mb-3"></div>
+        <button id="remove-button" class="btn btn-primary">Play</button>
+    </div>
+{% endblock %}

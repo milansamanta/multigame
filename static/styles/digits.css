@@ -1,0 +1,8 @@
+canvas{
+    width: 80vmin;
+    height: 80vmin;
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid black;
+    background-color: white;
+}
