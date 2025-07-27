@@ -9,7 +9,7 @@ class AI:
         moves = ttt.available_moves(board)
         if not moves:
             return None
-        if ttt.is_empty(board):
+        if ttt.is_empty(board) or random.choices([True, False], [ttt.EPSILON, 1-ttt.EPSILON])[0]:
             return random.choice(list(moves))
         all_moves = []
         player = ttt.player_turn(board)
