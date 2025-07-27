@@ -1,7 +1,7 @@
 EMPTY = None
 X = 'X'
 O = 'O'
-EPSILON = 0.1
+EPSILON = 0.2
 
 
 def make_move(board, move:tuple):
