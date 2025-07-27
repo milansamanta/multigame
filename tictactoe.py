@@ -1,6 +1,8 @@
 EMPTY = None
 X = 'X'
 O = 'O'
+EPSILON = 0.1
+
 
 def make_move(board, move:tuple):
     winner = check_winner(board)
@@ -35,10 +37,8 @@ def check_winner(board):
 def check_draw(board):
     return all(board[i][j] != EMPTY for i in range(3) for j in range(3)) and check_winner(board) is None
 
-
 def available_moves(board):
     return set((i, j) for i in range(3) for j in range(3) if board[i][j] == EMPTY)
-
 
 def player_turn(board):
     count_X = sum(board[i][j] == X for i in range(3) for j in range(3))
