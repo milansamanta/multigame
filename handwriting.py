@@ -30,10 +30,6 @@ def get_model():
         tf.keras.layers.Flatten(),
         tf.keras.layers.Dense(256, activation='relu'),
         tf.keras.layers.Dropout(0.2),
-        tf.keras.layers.Dense(256, activation='relu'),
-        tf.keras.layers.Dropout(0.2),
-        tf.keras.layers.Dense(256, activation='relu'),
-        tf.keras.layers.Dropout(0.2),
         tf.keras.layers.Dense(NUM_CLASSES, activation='softmax')
     ])
 
